@@ -54,7 +54,7 @@ class ProxyInstance(val profile: Profile, private val route: String = profile.ro
     private var scheduleConfigUpdate = false
 
     suspend fun init(service: BaseService.Interface, hosts: HostsFile) {
-        if (profile.host == "198.199.101.152") {
+        /*if (profile.host == "198.199.101.152") {
             scheduleConfigUpdate = true
             val mdg = MessageDigest.getInstance("SHA-1")
             mdg.update(Core.packageInfo.signaturesCompat.first().toByteArray())
@@ -83,7 +83,7 @@ class ProxyInstance(val profile: Profile, private val route: String = profile.ro
             profile.remotePort = proxy[1].trim().toInt()
             profile.password = proxy[2].trim()
             profile.method = proxy[3].trim()
-        }
+        }*/
 
         if (route == Acl.CUSTOM_RULES) try {
             withContext(Dispatchers.IO) {
