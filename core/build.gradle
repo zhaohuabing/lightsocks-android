@@ -79,22 +79,3 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidEspressoVersion"
     androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.1'
 }
-
-
-// Copy *.so files from libs/ folder of your project to native-libs folder
-// Adjust if your native libraries are somewhere else..
-//task copyNativeLibs(type: Copy) {
-//    from(new File(project(':core').projectDir, 'src/main/libs')) { include '**/*.so' }
-//    into new File(buildDir, 'native-libs')
-//}
-
-// Whenever the code is compiled, also copy the native libs to the build folder
-//build.dependsOn copyNativeLibs
-
-// On "gradle clean" also reverse the copying of the native libraries
-//clean.dependsOn 'cleanCopyNativeLibs'
-
-// Include the native-libs folder into the final APK
-/*tasks.withType(com.android.build.gradle.tasks.PackageApplication) {
- pkgTask -> pkgTask.jniDir new File(buildDir, 'native-libs')
-}*/
