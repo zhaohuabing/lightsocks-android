@@ -1,5 +1,11 @@
 This is a ported version of Shadowsocks for my personal use. I have been using Shadowsocks for a while but it's not stable anymore since early this year. So I decided to build my own VPN solution. The shadowsocks client lib has been replaced by a socks5 client of my own. Because it's not been widely used by many people, so the firewall may not notice its traffic pattern and hence it may not been blocked, at least now it works very well.
 
+Socks5 server: https://github.com/zhaohuabing/lightsocks
+
+Do not use it directly! I encourage you slighty change the encoding algorithm of the socks5 server to build your own VPN solution.
+
+Original docs of Shadowsocks:
+
 ## [Shadowsocks](https://shadowsocks.org) for Android
 
 [![CircleCI](https://circleci.com/gh/shadowsocks/shadowsocks-android.svg?style=shield)](https://circleci.com/gh/shadowsocks/shadowsocks-android)
