@@ -2,7 +2,7 @@ This is a ported version of Shadowsocks for my personal use. I have been using S
 
 Socks5 server: https://github.com/zhaohuabing/lightsocks
 
-Do not use it directly! I encourage you slighty change the encoding algorithm of the socks5 server to build your own VPN solution.
+Please do not use it directly! Instead, I encourage you look into the code of the socks5 server and change the encoding algorithm to build your own VPN solution.
 
 Original docs of Shadowsocks:
 
